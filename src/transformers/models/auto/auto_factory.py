@@ -560,6 +560,8 @@ class _BaseAutoModelClass:
                 pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
             )
         elif type(config) in cls._model_mapping.keys():
+            print("getting config...")
+            print(cls._model_mapping)
             model_class = _get_model_class(config, cls._model_mapping)
             return model_class.from_pretrained(
                 pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
