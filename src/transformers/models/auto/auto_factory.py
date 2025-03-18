@@ -440,6 +440,7 @@ class _BaseAutoModelClass:
             return model_class._from_config(config, **kwargs)
 
         raise ValueError(
+            f"Model mapping: {cls._model_mapping}. \n"
             f"Unrecognized configuration class {config.__class__} for this kind of AutoModel: {cls.__name__}.\n"
             f"Model type should be one of {', '.join(c.__name__ for c in cls._model_mapping.keys())}."
         )
