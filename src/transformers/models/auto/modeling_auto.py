@@ -547,6 +547,7 @@ MODEL_FOR_CAUSAL_LM_MAPPING_NAMES = OrderedDict(
         ("mega", "MegaForCausalLM"),
         ("megatron-bert", "MegatronBertForCausalLM"),
         ("mistral", "MistralForCausalLM"),
+        ("mistral3", "Mistral3CausalLMOutputWithPast"),
         ("mixtral", "MixtralForCausalLM"),
         ("mllama", "MllamaForCausalLM"),
         ("moshi", "MoshiForCausalLM"),
