@@ -566,7 +566,7 @@ class _BaseAutoModelClass:
                 pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
             )
         raise ValueError(
-            f"Model mapping: {cls._model_mapping}. \n"
+            f"Model mapping: {cls._model_mapping.keys()}. \n"
             f"Unrecognized configuration class {config.__class__} for this kind of AutoModel: {cls.__name__}.\n"
             f"Model type should be one of {', '.join(c.__name__ for c in cls._model_mapping.keys())}. \n"
         )
